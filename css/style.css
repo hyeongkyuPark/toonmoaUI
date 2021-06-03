@@ -1,0 +1,82 @@
+/* html */
+html { font-size: 3.8888vw; }
+
+/* container */
+.container { padding: 0 1.5rem; }
+
+/* header */
+header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; border-bottom: 1px solid #eee; background-color: #fff; }
+.main-header { display: flex; align-items: center; padding: 1rem 0; }
+.main-header .main-logo { width: 7.85rem; height: 2rem; background: url('../images/logo_toonmoa.png') no-repeat center center; background-size: contain; }
+.main-header .main-nav { display: none; }
+.main-header .right-menu { display: flex; align-items: center; margin-left: auto; }
+.main-header .right-menu .login-area { display: flex; align-items: center; margin-right: 1rem; }
+.main-header .right-menu .login-area li:not(:last-child) { position: relative; margin-right: 1em; }
+.main-header .right-menu .login-area li:not(:last-child)::before { content: ''; display: block; position: absolute; right: -0.5em; width: 1px; height: 1em; background: #222; }
+.main-header .right-menu .menu-bar { width: 1.5rem; height: 1.5rem; background: url('../images/icon_menu.png') no-repeat center center; background-size: contain; }
+.main-header .right-menu .search-box { display: none; }
+
+/* banner-section */
+.banner-wrap { position: relative; background: url('../images/banner01.png') no-repeat; background-position: 61% 2rem; background-size: cover; }
+.banner-wrap::before { content: ''; display: block; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+.banner-section { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 100vh; }
+.banner-section .text-area { margin: 3.9964rem 0 2rem; color: #fff; }
+.banner-section .text-area h2 { margin-bottom: 0.3em; font-size: 2.3rem; font-weight: bold; }
+.banner-section .text-area p { font-size: 1.7rem; font-weight: 500; }
+.banner-section .site-area li { display: inline-block; }
+.banner-section .site-area li:not(:last-child) { margin-right: 1.3rem; }
+.banner-section .site-area li img { height: 1.7rem; }
+.banner-section .site-area li img.naver { height: 1.2rem; }
+
+
+/* 반응형 미디어 쿼리 */
+/* 760px ~ */
+@media (min-width: 760px) {
+    /* html */
+    html { font-size: 2.083333vw; }
+
+    /* container */
+    .container { padding: 0 2.5rem;}
+
+    /* banner-section */
+    .banner-wrap { background-position: center 3rem; }
+    .banner-section { height: 55vw; }
+    .banner-section .text-area h2 { font-size: 3.75rem; }
+    .banner-section .text-area p { font-size: 2.5rem; }
+}
+
+/* 960px ~ */
+@media (min-width: 960px) {
+    /* html */
+    html { font-size: 1.25vw; }
+
+    /* container */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 2.5rem; }
+
+    /* header */
+    .main-header .main-logo { width: 12.12875rem; height: 3.25rem; margin-right: 1.5rem;}
+    .main-header .main-nav { display: block; }
+    .main-header .main-nav ul { display: flex; }
+    .main-header .main-nav ul li { padding: 0 0.5em; }
+    .main-header .main-nav ul li a { padding: 0 1em; font-weight: bold; }
+    .main-header .main-nav ul li.active a { color: #4090dd; }
+    .main-header .right-menu .login-area { font-size: 0.875rem; }
+    .main-header .right-menu .menu-bar { display: none; }
+    .main-header .right-menu .search-box { display: flex; align-items: center; width: 17rem; height: 2.6rem; overflow: hidden; border: 2px solid #4090dd; border-top-right-radius: 10px; border-bottom-left-radius: 10px; box-sizing: border-box; }
+    .main-header .right-menu .search-box input { flex-grow: 1; padding: 0.5rem; font-size: 0.875rem; }
+    .main-header .right-menu .search-box button { width: 2.6rem; height: 1.6rem; background: url('../images/icon_search.png') no-repeat center center; background-size: contain; }
+
+    /* banner-section */
+    .banner-wrap { background-position: center 5rem; }
+    .banner-section { height: 26.875rem; }
+    .banner-section .text-area h2 { font-size: 3.75rem; }
+    .banner-section .text-area p { font-size: 2.5rem; }
+}
+@media (min-width: 1290px) {
+    /* html */
+    html { font-size: 16px; }
+
+    /* header */
+    .main-header .main-logo { margin-right: 2rem;}
+    .main-header .main-nav ul li { padding: 0 1em; }
+}
