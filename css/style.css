@@ -47,7 +47,7 @@ header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; border-bo
 .info-section .info-list .info-item .info-count { font-size: 1.7rem; font-weight: bold; }
 
 /* band-banner-section */
-.band-banner-wrap { background: #8cbceb; }
+.band-banner-wrap { position: relative; background: #8cbceb; }
 .band-banner-section { padding: 4.285rem 0; }
 .band-banner-section .text-area { color: #fff; text-align: center; }
 .band-banner-section .text-area h2 { font-size: 1.4285rem; font-weight: bold; margin-bottom: 0.5em; }
@@ -80,7 +80,6 @@ header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; border-bo
     .info-section .info-list .info-item { width: 25%; margin: 0; }
 
     /* band-banner-section */
-    .band-banner-wrap { position: relative; }
     .band-banner-section .text-area { position: relative; z-index: 1; text-align: left; }
     .band-banner-section .text-area h2 { font-size: 1.875rem; }
     .band-banner-section .band-banner-image { display: block; position: absolute; bottom: 0; right: 0; width: 25.125rem; height: 23.0625rem; background: url('../images/band-banner01.png') no-repeat center center; background-size: contain; }
