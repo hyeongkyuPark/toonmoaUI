@@ -7,6 +7,8 @@ html { font-size: 3.8888vw; }
 /* util */
 .section-title { position: relative; display: flex; justify-content: center; font-size: 26px; font-weight: bold; text-transform: uppercase; }
 .section-title::before { content: ''; display: block; position: absolute; bottom: -50%; width: 100px; height: 5px; background: #4090dd; }
+.btn { padding: 0.7em 2em; border: 2px solid #fff; font-size: 0.85rem; color: #fff; background: none; }
+.btn-blue { border: 2px solid #4090dd; background: #4090dd;}
 
 /* header */
 header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; border-bottom: 1px solid #eee; background-color: #fff; }
@@ -44,12 +46,26 @@ header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; border-bo
 .info-section .info-list .info-item .info-name { margin-bottom: 0.5em; font-weight: 300; text-transform: uppercase; }
 .info-section .info-list .info-item .info-count { font-size: 1.7rem; font-weight: bold; }
 
+/* band-banner-section */
+.band-banner-wrap { background: #8cbceb; }
+.band-banner-section { padding: 4.285rem 0; }
+.band-banner-section .text-area { color: #fff; text-align: center; }
+.band-banner-section .text-area h2 { font-size: 1.4285rem; font-weight: bold; margin-bottom: 0.5em; }
+.band-banner-section .text-area h2 span { font-size: 1.1em; color: #4090dd; }
+.band-banner-section .text-area p { word-break: keep-all; margin-bottom: 2rem; }
+.band-banner-section .text-area .button-box .btn:first-child { margin-right: 1em; }
+.band-banner-section .band-banner-image { display: none; }
+.band-banner-section .band-banner-tag { position: absolute; bottom: 2rem; font-size: 0.7rem; color: #fff;  }
+.band-banner-section .band-banner-tag br { display: none; }
 
 /* 반응형 미디어 쿼리 */
 /* 760px ~ */
 @media (min-width: 760px) {
     /* html */
     html { font-size: 2.083333vw; }
+
+    /* util */
+    .btn { font-size: 1.125rem; }
 
     /* container */
     .container { padding: 0 2.5rem;}
@@ -62,6 +78,13 @@ header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; border-bo
 
     /* info-section */
     .info-section .info-list .info-item { width: 25%; margin: 0; }
+
+    /* band-banner-section */
+    .band-banner-wrap { position: relative; }
+    .band-banner-section .text-area { position: relative; z-index: 1; text-align: left; }
+    .band-banner-section .text-area h2 { font-size: 1.875rem; }
+    .band-banner-section .band-banner-image { display: block; position: absolute; bottom: 0; right: 0; width: 25.125rem; height: 23.0625rem; background: url('../images/band-banner01.png') no-repeat center center; background-size: contain; }
+    .band-banner-section .band-banner-tag { font-size: 0.8rem; }
 }
 
 /* 960px ~ */
@@ -95,6 +118,12 @@ header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; border-bo
 
     /* info-section */
     /* .info-section .info-list { padding: 0 13.125rem; } */
+
+    /* band-banner-section */
+    .band-banner-section { position: relative; }
+    .band-banner-section .band-banner-image { right: 10.5rem; }
+    .band-banner-section .band-banner-tag { right: 1rem; font-size: 1rem; }
+    .band-banner-section .band-banner-tag br { display: block; }
 }
 @media (min-width: 1290px) {
     /* html */
